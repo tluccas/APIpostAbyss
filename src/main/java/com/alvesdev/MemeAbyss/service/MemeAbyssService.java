@@ -29,8 +29,14 @@ public class MemeAbyssService {
                     .build();
 
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-
+            int status = response.statusCode();
             String json = response.body();
+
+            if (status != 200) {
+                System.err.println("Erro HTTP: " + status);
+                System.err.println("Resposta do servidor: " + json);
+                return new MemeDTO("ERRO NA RESPOSTA DO REDDIT", "");
+            }
 
             // Mapeando Json para objetos
             ObjectMapper mapper = new ObjectMapper();
