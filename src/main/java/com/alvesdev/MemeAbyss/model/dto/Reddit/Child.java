@@ -1,4 +1,4 @@
-package com.alvesdev.MemeAbyss.model.dto;
+package com.alvesdev.MemeAbyss.model.dto.Reddit;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -12,8 +12,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class RedditResponse {
+public class Child {
+    private String kind;
     @JsonProperty("data")
-    private RedditData data;
-
+    private PostData postData;
 }

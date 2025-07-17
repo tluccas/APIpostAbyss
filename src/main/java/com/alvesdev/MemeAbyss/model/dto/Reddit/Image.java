@@ -1,4 +1,4 @@
-package com.alvesdev.MemeAbyss.model.dto;
+package com.alvesdev.MemeAbyss.model.dto.Reddit;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Preview {
-    private List<Image> images;
-
+public class Image {
+    private Source source;
+    private List<Resolution> resolutions;
 }

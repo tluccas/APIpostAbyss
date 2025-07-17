@@ -1,10 +1,10 @@
 package com.alvesdev.MemeAbyss.service;
 
 
-import com.alvesdev.MemeAbyss.model.dto.Child;
+import com.alvesdev.MemeAbyss.model.dto.Reddit.Child;
 import com.alvesdev.MemeAbyss.model.dto.MemeDTO;
-import com.alvesdev.MemeAbyss.model.dto.PostData;
-import com.alvesdev.MemeAbyss.model.dto.RedditResponse;
+import com.alvesdev.MemeAbyss.model.dto.Reddit.PostData;
+import com.alvesdev.MemeAbyss.model.dto.Reddit.RedditResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 
 public class MemeAbyssService {
 
-    public String searchMeme(){
+    public MemeDTO searchMeme(){
         try{
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder().uri(new URI("https://www.reddit.com/r/ShitpostBR/hot.json?limit=50"))
@@ -56,14 +56,9 @@ public class MemeAbyssService {
                     .collect(Collectors.toList());
 
 
-
-
-            /*redditResponse.getData().getChildren().stream()
-                    .map(Child::getPostData).filter(tipoPost -> tipoPost != null && "image".equals(tipoPost.getTipoPost()))
-                    .collect(Collectors.toList());*/
-
             if(imageMemes.isEmpty()){
-                return "Nenhum meme de imagem encontrado";
+
+                return new MemeDTO("ERRO: Nenhum meme encontrado", "");
             }
             //Randomiza
             PostData pd = imageMemes.get(new Random().nextInt(imageMemes.size()));
@@ -87,10 +82,10 @@ public class MemeAbyssService {
             memeFinal.setTitulo(pd.getTitulo());
             memeFinal.setUrl(imagemUrl);
 
-            return memeFinal.toString();
+            return memeFinal;
         }catch (Exception e){
             e.printStackTrace();
-            return "erro";
+            return new MemeDTO("ERRO", "");
         }
     }
 }
