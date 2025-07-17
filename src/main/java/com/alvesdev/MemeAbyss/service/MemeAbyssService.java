@@ -22,9 +22,13 @@ public class MemeAbyssService {
 
     public MemeDTO searchMeme(){
         try{
-            HttpClient client = HttpClient.newHttpClient();
-            HttpRequest request = HttpRequest.newBuilder().uri(new URI("https://www.reddit.com/r/ShitpostBR/hot.json?limit=50"))
-                    .header("User-Agent", "MemeAbyss API")
+            HttpClient client = HttpClient.newBuilder()
+                    .followRedirects(HttpClient.Redirect.NORMAL)
+                    .build();
+
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(new URI("https://www.reddit.com/r/ShitpostBR/hot.json?limit=50"))
+                    .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MemeAbyssBot/1.0")
                     .GET()
                     .build();
 
