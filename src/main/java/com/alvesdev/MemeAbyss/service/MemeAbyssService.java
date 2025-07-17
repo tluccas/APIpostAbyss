@@ -28,7 +28,7 @@ public class MemeAbyssService {
 
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(new URI("https://www.reddit.com/r/ShitpostBR/hot.json?limit=50"))
-                    .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MemeAbyssBot/1.0")
+                    .header("User-Agent", "MemeAbyss/1.0 Hospedado")
                     .GET()
                     .build();
 
