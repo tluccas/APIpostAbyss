@@ -36,6 +36,9 @@ public class MemeAbyssService {
             int status = response.statusCode();
             String json = response.body();
 
+            System.out.println("Status HTTP: " + status);
+            System.out.println("Resposta JSON (primeiros 500 chars): " + (json.length() > 500 ? json.substring(0, 500) : json));
+
             if (status != 200) {
                 System.err.println("Erro HTTP: " + status);
                 System.err.println("Resposta do servidor: " + json);
