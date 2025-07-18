@@ -27,7 +27,7 @@ public class MemeAbyssService {
                     .build();
 
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(new URI("https://www.reddit.com/r/ShitpostBR/hot.json?limit=50"))
+                    .uri(new URI(""))
                     .header("User-Agent", "MemeAbyss/1.0 Hospedado")
                     .GET()
                     .build();
