@@ -13,13 +13,13 @@
 	</parent>
 
 	<groupId>com.alvesdev</groupId>
-	<artifactId>MemeAbyss</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>MemeAbyss</name>
-	<description>API de memes duvidosos</description>
+	<artifactId>PostAbyss</artifactId>
+	<version>0.0.1</version>
+	<name>PostAbyss</name>
+	<description>API de posts aleatórios</description>
 
 	<properties>
-		<java.version>23</java.version>
+		<java.version>17</java.version>
 	</properties>
 
 	<dependencies>
@@ -77,6 +77,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>3.2.5</version>
+				<configuration>
+					<mainClass>com.alvesdev.PostAbyss</mainClass>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>
