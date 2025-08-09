@@ -1,11 +1,11 @@
-﻿# APImemeAbyss 
+﻿# API PostAbyss 
 
 API em Spring Boot que retorna memes aleatórios (imagens) do Reddit.
 
 ---
 ## 🚀 Tecnologias 
 
-- Java 21 (Development version)
+- Java 21 (Development version) and Java 17 (Deploy version)
 - Spring Boot
 - Docker
 - Lombok
@@ -32,3 +32,4 @@ API em Spring Boot que retorna memes aleatórios (imagens) do Reddit.
 ---
 # 📜 Licença
 Este projeto está licenciado sob a [Licença MIT](https://github.com/tluccas/APImemeAbyss/blob/main/LICENSE) por Lucas Alves.
+
