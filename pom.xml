@@ -78,7 +78,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>3.2.5</version>
 				<configuration>
-					<mainClass>com.alvesdev.PostAbyss</mainClass>
+					<mainClass>com.alvesdev.PostAbyss.PostAbyssApplication</mainClass>
 				</configuration>
 				<executions>
 					<execution>

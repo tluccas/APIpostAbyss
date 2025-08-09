@@ -1,4 +1,4 @@
-package com.alvesdev.MemeAbyss.model.dto.Reddit;
+package com.alvesdev.PostAbyss.model.dto.Reddit;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

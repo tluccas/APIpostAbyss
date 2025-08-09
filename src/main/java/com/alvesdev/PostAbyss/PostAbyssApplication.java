@@ -1,14 +1,13 @@
-package com.alvesdev.MemeAbyss;
+package com.alvesdev.PostAbyss;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
-public class MemeAbyssApplication {
+public class PostAbyssApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MemeAbyssApplication.class, args);
+		SpringApplication.run(PostAbyssApplication.class, args);
 	}
 
 }

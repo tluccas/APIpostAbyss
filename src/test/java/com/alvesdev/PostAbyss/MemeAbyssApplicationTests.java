@@ -1,4 +1,4 @@
-package com.alvesdev.MemeAbyss;
+package com.alvesdev.PostAbyss;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

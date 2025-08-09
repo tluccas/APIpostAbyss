@@ -1,22 +1,22 @@
-package com.alvesdev.MemeAbyss.controller;
+package com.alvesdev.PostAbyss.controller;
 
-import com.alvesdev.MemeAbyss.model.dto.MemeDTO;
+import com.alvesdev.PostAbyss.model.dto.MemeDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.alvesdev.MemeAbyss.service.MemeAbyssService;
+import com.alvesdev.PostAbyss.service.PostAbyssService;
 
 @RestController
 @RequestMapping("/meme")
 @Tag(name = "Memes", description = "Endpoints para buscar memes do Reddit")
-public class MemeAbyssController {
+public class PostAbyssController {
 
-    private final MemeAbyssService memeAbyssService;
+    private final PostAbyssService memeAbyssService;
 
-    public MemeAbyssController(MemeAbyssService memeAbyssService){
+    public PostAbyssController(PostAbyssService memeAbyssService){
         this.memeAbyssService = memeAbyssService;
     }
 
