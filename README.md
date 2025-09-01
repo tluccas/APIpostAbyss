@@ -1,6 +1,6 @@
 ﻿# API PostAbyss 
 
-API em Spring Boot que retorna memes aleatórios (imagens) do Reddit.
+API em Spring Boot que retorna posts aleatórios (imagens) do Reddit.
 
 ---
 ## 🚀 Tecnologias 
@@ -32,4 +32,5 @@ API em Spring Boot que retorna memes aleatórios (imagens) do Reddit.
 ---
 # 📜 Licença
 Este projeto está licenciado sob a [Licença MIT](https://github.com/tluccas/APImemeAbyss/blob/main/LICENSE) por Lucas Alves.
+
 
