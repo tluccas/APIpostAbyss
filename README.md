@@ -18,8 +18,8 @@ API em Spring Boot que retorna posts aleatórios (imagens) do Reddit.
 ## 📦 Como Usar
 
 
-#### 1. URL base: https://apimemeabyss-production.up.railway.app/
-#### 2. Endpoint para obter um meme aleatório: https://apimemeabyss-production.up.railway.app/meme/random
+#### 1. URL base: temporariamente offline
+#### 2. Endpoint para obter um meme aleatório: temporariamente offline
 ### Exemplo de resposta: 
 ```
 {
@@ -32,5 +32,6 @@ API em Spring Boot que retorna posts aleatórios (imagens) do Reddit.
 ---
 # 📜 Licença
 Este projeto está licenciado sob a [Licença MIT](https://github.com/tluccas/APImemeAbyss/blob/main/LICENSE) por Lucas Alves.
+
 
 
